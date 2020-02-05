@@ -87,9 +87,9 @@ public class MakeDotNetGreatAgainTests
 ```
 
 ## Three laws of TDD
-    1. You may not write production code until you have written a failing unit test
-    2. You may not write more of a unit test than is sufficient to fail, and compiling is failing
-    3. You may not write more production code than is sufficient to pass the currently failing test
+1. You may not write production code until you have written a failing unit test
+2. You may not write more of a unit test than is sufficient to fail, and compiling is failing
+3. You may not write more production code than is sufficient to pass the currently failing test
     
 ## Keeping Tests Clean
 Problem with this approach – test code could outgrow your prod code and become unmanageable
