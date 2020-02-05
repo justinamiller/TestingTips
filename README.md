@@ -86,4 +86,28 @@ public class MakeDotNetGreatAgainTests
 
 ```
 
-> Source https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests
+## Three laws of TDD
+    1. You may not write production code until you have written a failing unit test
+    2. You may not write more of a unit test than is sufficient to fail, and compiling is failing
+    3. You may not write more production code than is sufficient to pass the currently failing test
+    
+## Keeping Tests Clean
+Problem with this approach – test code could outgrow your prod code and become unmanageable
+Is dirty test code better than no test code?
+
+Tests must change as the production code changes
+The dirtier the tests, the harder they are to change
+Tests can become a liability due to technical debt of the dirtiness
+
+Abandoning test code has the following consequences
+    * Production code defects rise
+    * Fear of changing code increases
+    * Cleaning / refactoring code descreases due to lack of confidence (Code rot!!!)
+
+Test code is as important as production code – it should be treated as a first class citizen and should be as clean as production code.
+
+## Tests Enable the -ilities
+* Tests are what keep your production code flexible, maintainable and reusable.
+* Tests allow you to make changes to code without fear.
+* Tests enable change.
+* Tests enable improving architecture.
