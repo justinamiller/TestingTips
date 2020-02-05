@@ -93,16 +93,16 @@ public class MakeDotNetGreatAgainTests
     
 ## Keeping Tests Clean
 Problem with this approach – test code could outgrow your prod code and become unmanageable
-Is dirty test code better than no test code?
 
-Tests must change as the production code changes
-The dirtier the tests, the harder they are to change
-Tests can become a liability due to technical debt of the dirtiness
+Is dirty test code better than no test code?
+* Tests must change as the production code changes
+* The dirtier the tests, the harder they are to change
+* Tests can become a liability due to technical debt of the dirtiness
 
 Abandoning test code has the following consequences
-    * Production code defects rise
-    * Fear of changing code increases
-    * Cleaning / refactoring code descreases due to lack of confidence (Code rot!!!)
+* Production code defects rise
+* Fear of changing code increases
+* Cleaning / refactoring code descreases due to lack of confidence (Code rot!!!)
 
 Test code is as important as production code – it should be treated as a first class citizen and should be as clean as production code.
 
@@ -111,3 +111,15 @@ Test code is as important as production code – it should be treated as a first
 * Tests allow you to make changes to code without fear.
 * Tests enable change.
 * Tests enable improving architecture.
+
+Without tests, your code base rots.
+
+## FIRST
+* **(F)ast** – tests should be fast / run quickly
+* **(I)ndependent** – tests should NOT depend on each other – tests should be able to be run in any order they like
+* **(R)epeatable** – they should be repeatable in ANY environment without need for any specific infrastructure
+* **(S)elf-validating** – they should have a boolean output – pass or fail, nothing else
+* **(T)imely** – they need to be written in a timely fashion – just before the production code is written – ensures they are easy to code against
+
+## Importance
+Unit Tests are as important if not moreso than the production code they’re for becasue they allow you to make changes confidently and without fear. They allow you to mold your code over time to improve flexibility / maintainability.
